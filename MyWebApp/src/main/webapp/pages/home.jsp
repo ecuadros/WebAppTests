@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	I love Arequipa V2.0
+	I love Arequipa V5.0 <br>
+	${alien.aid}, ${alien.aname}, ${alien.lang}
 </body>
 </html>
