@@ -1,0 +1,6 @@
+https://www.youtube.com/watch?v=35EQXmHKZYs
+	
+40:40 Web App using Spring Boot
+55:34 Web App using Spring Boot Application Properties file
+1:00:12 Web App using Spring Boot accepting client data
+	   
