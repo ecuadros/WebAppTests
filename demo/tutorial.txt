@@ -9,3 +9,5 @@ https://www.youtube.com/watch?v=qVTAB8Z2VmA
 1:08:52 Web App using Spring Boot ModelAndView
 1:16:13 Web App using Spring Boot Model Object
 1:20:30 Spring Boot JPA MVC H2 Example
+1:35:29 Spring Boot JPA MVC H2 Example Part 2
+1:45:14 Spring Boot JPA MVC H2 Query Methods example (Part 3)
