@@ -15,6 +15,5 @@ public interface AlienRepository extends CrudRepository<Alien, Integer>
 	List<Alien> findByAidLessThan(Integer id);
 	List<Alien> findByAidLessThanEqual(Integer id);
 	
-	List<Alien> findByAidGreaterThanEqualAndTechGreaterThanEqual(Integer id, String tech);
-	
+	List<Alien> findByAidGreaterThanEqualAndTechGreaterThanEqualOrAnameContaining(Integer id, String tech, String name);
 }

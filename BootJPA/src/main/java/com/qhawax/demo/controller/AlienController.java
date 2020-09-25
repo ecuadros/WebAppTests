@@ -37,9 +37,7 @@ public class AlienController
 		System.out.println(aRepo.findByAidGreaterThanEqual(aid));
 		System.out.println(aRepo.findByAidLessThan(aid));
 		System.out.println(aRepo.findByAidLessThanEqual(aid));
-		
-		System.out.println(aRepo.findByAidGreaterThanEqualAndTechGreaterThanEqual(aid, "Pascal"));
-		
+		System.out.println(aRepo.findByAidGreaterThanEqualAndTechGreaterThanEqualOrAnameContaining(aid, "Pascal", "Cuadros"));
 		mv.addObject(alien);
 		return mv;
 	}
