@@ -1,6 +1,7 @@
 package com.qhawax.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -50,6 +51,16 @@ public class AlienController
 		mv.addObject(alien);
 		mv.addObject("field", field);
 		mv.addObject("content", "${alien."+field+"}");
+		return mv;
+	}
+	
+	@RequestMapping("/queryByField")
+	public ModelAndView specificQuery(@RequestParam String field)
+	{
+		ModelAndView mv = new ModelAndView("showAlien.jsp");
+		Alien alien = aRepo.findById(105).orElse(new Alien());
+		System.out.println(aRepo.findAll(Sort.by(field).ascending()));
+		mv.addObject(alien);
 		return mv;
 	}
 	

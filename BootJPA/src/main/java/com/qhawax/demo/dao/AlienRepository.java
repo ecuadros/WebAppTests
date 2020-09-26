@@ -2,6 +2,7 @@ package com.qhawax.demo.dao;
 
 import java.util.List;
 
+import org.springframework.data.domain.Sort;
 import org.springframework.data.repository.CrudRepository;
 
 import com.qhawax.demo.model.Alien;
@@ -16,4 +17,9 @@ public interface AlienRepository extends CrudRepository<Alien, Integer>
 	List<Alien> findByAidLessThanEqual(Integer id);
 	
 	List<Alien> findByAidGreaterThanEqualAndTechGreaterThanEqualOrAnameContaining(Integer id, String tech, String name);
+	
+	//@Query("from Alien order by :field")
+	//List<Alien> findAll(String field);
+	
+	List<Alien> findAll(Sort sort);
 }
